@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARK: Survival Evolved - Fan Page</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  background-image: url('farming.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: #ff6600;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #ff8533;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.right {
+  background-color: rgba(229, 229, 229, 0.8);
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+.footer {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+
+<div style="background-color:#ff6600;padding:15px;text-align:center;">
+  <h1 style="color: white; text-shadow: 2px 2px 4px #000000;">ARK: Survival Evolved - David</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="#" onclick="showContent('introduccion'); return false;">Introducción</a>
+    <a href="#" onclick="showContent('donde-jugarlo'); return false;">Dónde Jugarlo</a>
+    <a href="#" onclick="showContent('criaturas'); return false;">Criaturas</a>
+    <a href="#" onclick="showContent('noticias'); return false;">Noticias</a>
+  </div>
+
+  <div class="main" id="mainContent">
+    <h2 id="introduccion">Bienvenido a ARK: Survival Evolved</h2>
+    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/346110/ss_d46ebf560ccdbd776951f21b17ed78c0a0b1f1f7.jpg" alt="Paisaje de ARK: Survival Evolved">
+    <p>¡Saludos, valiente superviviente! Bienvenido a un mundo donde los dinosaurios aún caminan por la tierra y tú eres la clave para desentrañar sus misterios. ARK: Survival Evolved es más que un juego, es una aventura épica que desafía los límites entre el pasado prehistórico y un futuro de ciencia ficción.</p>
+    <p>En este vasto y peligroso mundo, despertarás en las costas de una misteriosa isla llamada ARK. Aquí, tu ingenio y habilidades serán puestos a prueba mientras luchas por sobrevivir, construyes, exploras y dominas el reino de los dinosaurios. Desde la creación de tu primera herramienta hasta la conquista de los cielos montando un Pteranodon, cada día trae nuevos desafíos y descubrimientos emocionantes.</p>
+    
+    <h2 id="donde-jugarlo">¿Dónde Jugar ARK?</h2>
+    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/346110/ss_3b3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e.jpg" alt="Jugando ARK en diferentes plataformas">
+    <p>¡La aventura nos espera en todas partes, supervivientes! ARK: Survival Evolved está disponible en una variedad de plataformas para que puedas domar dinosaurios donde quiera que estés. Personalmente, disfruto jugarlo en PC a través de Steam, donde la comunidad de modders añade contenido increíble constantemente. Pero también puedes vivir la experiencia en PlayStation, Xbox, e incluso en tu teléfono móvil. ¡No hay excusa para no unirse a la diversión prehistórica!</p>
+    
+    <h2 id="criaturas">Criaturas Fascinantes</h2>
+    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/346110/ss_1a0b7b9f8c1a2b2e3f7d9e6c9d8b7a6f5e4d3c2b.jpg" alt="Dinosaurios en ARK">
+    <p>¡Amigos supervivientes! ¿Alguna vez han soñado con montar un T-Rex? En ARK, ¡ese sueño se hace realidad! Desde los majestuosos Argentavis que surcan los cielos hasta los temibles Megalodones que acechan en las profundidades, cada criatura tiene su propia personalidad y habilidades únicas. Mi favorito personal es el adorable Dodo, ¡siempre me hace sonreír en medio del caos prehistórico!</p>
+  </div>
+
+<div class="footer">
+<div style="background-color:#ff6600; text-align:center; padding:10px; margin-top:7px; color:white;">© 2024 ARK: Survival Evolved - David</div>
+</div>
+
+<script>
+function showContent(section) {
+  const mainContent = document.getElementById('mainContent');
+  let content = '';
+
+  switch(section) {
+    case 'introduccion':
+      content = `
+        <h2>Bienvenido a ARK: Survival Evolved</h2>
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/346110/ss_d46ebf560ccdbd776951f21b17ed78c0a0b1f1f7.jpg" alt="Paisaje de ARK: Survival Evolved">
+        <p>¡Saludos, valiente superviviente! Bienvenido a un mundo donde los dinosaurios aún caminan por la tierra y tú eres la clave para desentrañar sus misterios. ARK: Survival Evolved es más que un juego, es una aventura épica que desafía los límites entre el pasado prehistórico y un futuro de ciencia ficción.</p>
+        <p>En este vasto y peligroso mundo, despertarás en las costas de una misteriosa isla llamada ARK. Aquí, tu ingenio y habilidades serán puestos a prueba mientras luchas por sobrevivir, construyes, exploras y dominas el reino de los dinosaurios. Desde la creación de tu primera herramienta hasta la conquista de los cielos montando un Pteranodon, cada día trae nuevos desafíos y descubrimientos emocionantes.</p>
+      `;
+      break;
+    case 'donde-jugarlo':
+      content = `
+        <h2>¿Dónde Jugar ARK?</h2>
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/346110/ss_3b3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e.jpg" alt="Jugando ARK en diferentes plataformas">
+        <p>¡La aventura nos espera en todas partes, supervivientes! ARK: Survival Evolved está disponible en una variedad de plataformas para que puedas domar dinosaurios donde quiera que estés. Personalmente, disfruto jugarlo en PC a través de Steam, donde la comunidad de modders añade contenido increíble constantemente. Pero también puedes vivir la experiencia en PlayStation, Xbox, e incluso en tu teléfono móvil. ¡No hay excusa para no unirse a la diversión prehistórica!</p>
+      `;
+      break;
+    case 'criaturas':
+      content = `
+        <h2>Criaturas Fascinantes</h2>
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/346110/ss_1a0b7b9f8c1a2b2e3f7d9e6c9d8b7a6f5e4d3c2b.jpg" alt="Dinosaurios en ARK">
+        <p>¡Amigos supervivientes! ¿Alguna vez han soñado con montar un T-Rex? En ARK, ¡ese sueño se hace realidad! Desde los majestuosos Argentavis que surcan los cielos hasta los temibles Megalodones que acechan en las profundidades, cada criatura tiene su propia personalidad y habilidades únicas. Mi favorito personal es el adorable Dodo, ¡siempre me hace sonreír en medio del caos prehistórico!</p>
+      `;
+      break;
+    case 'noticias':
+      content = `
+        <h2>Últimas Noticias</h2>
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/346110/ss_2968e0ffd9f6d34e0b5f9f1be33a4cbb9a891a77.jpg" alt="Nuevo contenido en ARK">
+        <p>¡Atención supervivientes! ¿Han escuchado los rugidos en la distancia? ¡Nuevas criaturas están llegando a nuestras costas! El último parche trae consigo no solo nuevos amigos (y enemigos) prehistóricos, sino también un montón de objetos craftables que nos ayudarán a sobrevivir. Y para los valientes, se rumorea que un nuevo jefe está acechando en las profundidades de una cueva recién descubierta. ¡Preparen sus armas y sus nervios!</p>
+      `;
+      break;
+  }
+
+  mainContent.innerHTML = content;
+}
+</script>
+
+</body>
+</html>
+
+
+
